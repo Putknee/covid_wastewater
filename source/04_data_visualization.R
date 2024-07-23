@@ -3,7 +3,8 @@ load(here::here("data", "clean.Rdata"))
 library(tidyverse)
 library(forcats)
 
-# Adding a comment - these are boxplots!
+# these are boxplots!
+# Adding another comment for testing git
 plot1 = covid %>%
   mutate(county = factor(county),
          county = fct_reorder(county, concentration)) %>%
